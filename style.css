@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 200vh;
+}
+
+.container{
+    margin: 0px auto;
+    max-width: 1100px;
+}
+
+#header{
+    width: 100%;
+    position: fixed;
+    background-color: rgb(3, 3, 53);
+    z-index: 99;
+}
+#navbar{
+   padding: 1rem 0;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+h1{
+    color: #fff;
+    font-size: 1.6rem;
+}
+h1 span{
+    color: crimson;
+}
+.navbar-menu{
+    display: flex;
+
+}
+.nav-item{
+    list-style: none;
+    
+}
+.nav-link{
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: all 0.3s ease !important;
+    
+}
+.nav-link:hover{
+    background-color: #336ea2;
+    border-radius: 10px;
+    color: crimson;
+}
+
+
+
+/* About Section */
+
+#about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 150px; 
+    padding-bottom: 3rem;
+   
+}
+
+#about img{
+width: 20%;
+height: auto;
+border-radius: 100%;
+}
+.about{
+    padding-top: 1rem;
+    
+   
+}
+#about h2{
+    text-align: center;
+    font-size: 2rem;
+}
+#about p{
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
+    font-size: 1.2rem;
+    color: rgb(175, 170, 170);
+    opacity: 0.7;
+    text-align: center;
+}
+
+#about .btn{
+    background-color: #336ea2;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+
+#about .btn:hover{
+color: #336ea2;
+background-color: #fff;
+border: 1px solid #336ea2;
+font-size: 1.5rem;
+font-weight: bold;
+}
+
+
+.divider{
+    border: 1px solid gray;
+    opacity: 0.5;
+}
+
+
+#course{
+   margin-top: 50px;
+   background-color: hsl(208, 80%, 10%);
+  text-align: center;
+}
+.items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+};
+.item{
+    width:33%;
+    
+}
+
+#course h3{
+color: #fff;
+font-size: 1.8rem;
+padding: 0.5rem;
+cursor: pointer;
+}
+
+#course .item i,h3{
+color: #fff;
+font-size: 1.2rem;
+padding: 0.5rem;
+}
+
+#course .item p{
+    color: #fff;
+    opacity: 0.7;  
+    padding: 1rem;
+}
+
+
+/* Lesson Selection */
+
+
+#lessons h3{
+color: #000;
+text-align: center;
+font-size: 1.8rem;
+padding: 1.5rem;
+cursor: pointer;
+}
+#lessons .lesson{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 50px;
+}
+
+#lessons .lesson .image{
+    position: relative;
+    margin-right: 1.2rem;
+    
+}
+#lessons .lesson .image img {
+    border-radius: 5px;
+  }
+#lessons .lesson .image span{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    background-color: crimson;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#lessons .lesson .info .title {
+    letter-spacing: 1.2px;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+  #lessons .lesson .info .description {
+    letter-spacing: 1.2px;
+    margin-bottom: 0.25rem;
+    opacity: 0.6;
+    font-size: 1.2rem;
+    cursor: pointer;
+
+  }
+  #lessons .lesson .info .instructor {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+    opacity: 0.6;
+    cursor: pointer;
+
+  }
+  #lessons .lesson .info .rating {
+    font-size: 0.8rem;
+    margin-bottom: 0.25rem;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+
+/* Contact Section */
+
+#contact{
+    background-color: #29547a;
+    padding-bottom: 2.5rem;
+}
+
+#contact h3{
+    text-align: center;
+    padding: 0.8rem;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+
+#contact form{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact form .form-group{
+display: flex;
+flex-direction: column;
+}
+
+#contact form .form-group label{
+    font-size: 1.2rem;
+    color: #fff;
+}
+#contact form .form-group label::after{
+    content: "*";
+    color: red;
+}
+
+#contact form .form-group input{
+height: 5vh;
+margin: 12px 0;
+outline: 0;
+border: 0;
+border-radius: 3px;
+}
+#contact form .form-group input:focus{
+  border:1px dashed blue;
+    }
+#contact form .form-group textarea{
+    height: 15vh;
+    outline: 0;
+    border: 0;
+    margin: 12px 0;
+border-radius: 3px;
+
+    }
+    #contact form .form-group .notRequired::after{
+        content: " ";
+    }
+ #contact form .form-group textarea:focus{
+        border:1px dashed blue;
+          }
+
+
+#contact form .form-group button{
+    height: 7vh;
+    margin: 12px 0;
+    font-size: 1.2rem;
+    color: #336ea2;
+    border: 0;
+outline: 0;
+border-radius: 3px;
+}
+
+#contact form .form-group button:hover{
+color: #fff;
+
+cursor: pointer;
+background-color: #336ea2;
+}
+
+
+
+/* Footer */
+
+#footer{
+    background-color: rgb(39, 35, 35);
+}
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer p{
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 3rem;
+}
+  
+/* Media Query */
+@media screen and (max-width:960px) {
+    #navbar{
+        flex-direction: column;
+        height: 80px;
+         
+    }
+    #course .items{
+        flex-direction: column;
+    }
+    #course .items .item{
+        width: 100%;
+        padding: 2rem;
+    }
+
+
+     #lessons .lesson{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    } 
+    #lessons .image{
+        margin-bottom: 1rem;
+    }
+    #lessons .lesson .info {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #lessons .lesson .info .title {
+        font-size: 1.1rem;
+        
+      }
+      #lessons .lesson .info .description {
+        font-size: 0.8rem;
+    
+      }
+      #lessons .lesson .info .instructor {
+        font-size: 0.8rem;
+    
+      }
+      #lessons .lesson .info .rating {
+        font-size: 0.5rem;
+    
+      }
+
+      #contact form{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #footer p{
+        color: #fff;
+        font-size: 0.5rem;
+        padding: 2rem;
+    }
+    
+};
+
+@media screen and (max-width:400px) {
+    #navbar{
+        flex-direction: column;
+    
+    }
+    h1{
+        font-size: 1rem;
+    }
+    .nav-link{
+        font-size: 12px;
+    };
+
+    
+
+    
+};
+/* End Of Media Query */
